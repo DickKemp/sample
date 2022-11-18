@@ -1,6 +1,7 @@
 # sample
 Sample project
 
+# sequence diagram
 ```mermaid
 sequenceDiagram
     participant dotcom
@@ -13,3 +14,18 @@ sequenceDiagram
     dotcom->>iframe: set mermaid data on iframe
     iframe->>iframe: render mermaid
 ```
+# FLowchart
+flowchart TB
+    c1-->a2
+    subgraph one
+    a1-->a2
+    end
+    subgraph two
+    b1-->b2
+    end
+    subgraph three
+    c1-->c2
+    end
+    one --> two
+    three --> two
+    two --> c2
