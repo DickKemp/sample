@@ -15,6 +15,7 @@ sequenceDiagram
     iframe->>iframe: render mermaid
 ```
 # FLowchart
+```mermaid
 flowchart TB
     c1-->a2
     subgraph one
@@ -29,3 +30,4 @@ flowchart TB
     one --> two
     three --> two
     two --> c2
+```
