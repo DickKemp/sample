@@ -151,7 +151,7 @@
 
         function renderSchedule(data) {
             const scheduleDiv = document.getElementById('schedule');
-            scheduleDiv.innerHTML = '<H2>17 players</H2>';
+            scheduleDiv.innerHTML = '<H2>17 players using fetch</H2>';
             scheduleDiv.innerHTML += `            
                     <table class="head-table">
                     <tr>
@@ -177,8 +177,8 @@
                 scheduleDiv.innerHTML += generateTable(round, index + 1);
             });
         }
-
-        renderSchedule(myscheduleData);
+        fetchScheduleData("17.json")
+        //renderSchedule(myscheduleData);
 
     </script>
 </body>
